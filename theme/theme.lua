@@ -38,7 +38,7 @@ local version, version_string = gui.Combobox(ui_color_ref[2], "theme.version", "
 local icon = {};
 local function setup_icon()
     for i = 0, 5 do
-        icon[i] = draw.CreateTexture(common.DecodePNG(http.Get("https://raw.githubusercontent.com/zer420/Menu-Theme/master/icon/" .. i .. ".png")));
+        icon[i] = draw.CreateTexture(common.DecodePNG(http.Get("https://raw.githubusercontent.com/zer420/aw/main/theme/icon/" .. i .. ".png")));
     end;
 end; setup_icon();
 
