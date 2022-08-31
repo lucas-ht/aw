@@ -1,0 +1,484 @@
+local French = {
+
+    v_loc = 1.00,
+
+    {"Legitbot", "Ragebot", "Visuals", "Misc", "Settings",},
+    {
+        {"Aimbot", "Triggerbot", "Weapon", "Other", "Semirage",},
+        [2] = {
+            {"Toggle", "Weapon", "Hitbox Selection",},
+            [2] =  {
+                [1] =  {"Enable", "Enables legit aimbot.",},
+                [2] =  {"Aim Key", "Set the aimbot on key.",},
+                [3] =  {"Toggle Key", "Set the toggle key to enable/disable aimbot.",},
+            },
+            [3] =  {
+                [1] = {"Auto Fire", "Fires without pressing any keys.",},
+                [2] = {"Fire On Press", "Fires when pressing the aimbot key.",},
+                [3] = {"Auto Pistol Interval", "Interval between shots for automatic mode.",},
+            },
+            [4] =  {
+                [1] =  {[2] = "Order of hitboxes the aimbot will choose."},
+                [2] =  {[5] = true, "Hitbox Advance Multipler", "How fast aimbot should switch to the next hitbox.",},
+                [3] =  {[5] = true, "Nearest To Crosshair", "Priority hitbox nearest to crosshair as first.",},
+            },
+        },
+        [3] =  {
+            {"Toggle", "Weapon", "Hitbox Scan",},
+            [2] = {
+                [1] = {"Enable", "Enables triggerbot.",},
+                [2] = {"Trigger Key", "Activate triggerbot on key press.",},
+                [3] = {"Auto Fire", "Let triggerbot fire without pressing any key.",},
+            },
+            [3] =  {
+                [1] = {[5] = true, "Trigger Delay", "Delay shot after trigger lock.",},
+                [2] = {[5] = true, "Trigger Burst", "Keep firing after trigger lock.",},
+                [3] = {[5] = true, "Hit Chance", "Minimum chance to hit before triggerbot shoots.",},
+                [4] = {[5] = true, "Anti-Recoil", "Account for recoil when trigger scanning.",},
+            },  
+            [4] =  {
+                {[2] = "Trigger on selected hitboxes.",},
+            },
+        },
+        [4] =  {
+            {"Accuracy", "Target", "Aiming", "Visibility",},
+            [2] = {
+                [1] = {[5] = true, "Recoil Control System", "Smoothly counter weapon recoil.",},
+                [2] = {[5] = true, "Standalone Recoil Control", "Enable RCS while aiming freely.",},
+                [3] = {[5] = true, "Horizontal Recoil", "How much of horizontal recoil will be countered.",},
+                [4] = {[5] = true, "Vertical Recoil", "How much of Vertical recoil will be countered.",},
+            },
+            [3] = {
+                [1] = {[5] = true, "Minimum FOV Range", "Minimum field of view for aim lock.",},
+                [2] = {[5] = true, "Maximum FOV Range", "Maximum field of view for aim lock.",},
+                [3] = {[5] = true, "Target Switch Delay", "Time aimbot will wait before switching target.",},
+                [4] = {[5] = true, "First Shot Delay", "Time till aimbot fires first shot.",},
+            },
+            [4] = {
+                [1] = {[5] = true, "Smooth Factor", "Smooth out aimbot movement.",},
+                [2] = {[5] = true, "Smooth Method", "Method to use for smooth movement.", {"Dynamic", "Static",},},
+                [3] = {[5] = true, "Randomize Factor", "Randomize aimbot target position.",},
+                [4] = {[5] = true, "Curve Factor", "How non-linear the movement will be.",},
+            },
+            [5] = {
+                [1] = {[5] = true, "Auto Wall", "Fire through penetrable walls.",},
+                [2] = {[5] = true, "Through Smoke", "Fire through smoke.",},
+            },
+
+        },
+        [5] =  {
+            {"Movement", "Extra",},
+            [2] = {
+                [1] = {"Walk Speed Customization", "Enable walk speed modifications.",},
+                [2] = {"Walk Speed", "Modify walk speed with this ammount.",},
+                [3] = {"Quick Stop", "Makes you stop faster by counter-strafing.",},
+            },
+            [3] = {
+                [1] = {"Backtrack Time", "How many position in the past are allowed.",},
+                [2] = {"Knife Triggerbot", "Enable knife triggerbot.",},
+            },
+        },
+        [6] = {
+            {"Aimbot", "Position Adjustment", "Anti-Aim",},
+            [2] = {
+                [1] = {"Silent Aimbot", "Autoaim when in Low FOV range.",},
+                [2] = {"Auto Stop", "Stop when aimbot fires to lower inaccuracy.",},
+            },
+            [3] = {
+                [1] = {"Backtracking", "Aim at enemy history positions",},
+                [2] = {"Resolver", "Improve accuracy when shooting at enemy anti-aim.",},
+            },
+            [4] = {
+                {"Type", "Maximum affects visible animation.", {"Off", "Minimum", "Maximum",},},
+                {"Direction", "Choose mode for selecting direction", {"Auto", "Manual",},},
+                {"Left Side",},
+                {"Right Side",},
+                {"On Enemy Aiming", "Activate anti-aim only when enemy is aiming at you.",},
+                {"Disable On Knife", "Disable anti-aim when holding knife.",},
+                {"Disable On Grenade", "Disable anti-aim when holding a grenade.",},
+            },
+        },
+    },
+    {
+        {"Aimbot", "Accuracy", "Hitscan", "Anti-Aim",},
+        [2] = {
+            {"Toggle", "Automation", "Target", "Extra",},
+            [2] = {
+                [1] = {"Enable", "Enables rage aimbot.",},
+                [2] = {"Aim Key", "Set the aimbot on key.",},
+                [3] = {"Toggle Key", "Set the toggle key to enable/disable aimbot.",},
+            },
+            [3] = {
+                [1] = {"Auto Pistol", "Makes pistol fire like an automatic weapon.",},
+                [2] = {"Auto Revolver", "Auto cocks the revolver for quicker fire.",},
+                [3] = {"Auto Scope", "Scopes with sniper automatically when firing.", {"Off", "On - Auto Unzoom", "On - No Unzoom",},}, 
+            },
+            [4] = {
+                [1] = {"FOV", "Maximum field of view the aimbot will target within.",},
+                [2] = {"Aim Lock", "Increase priority of latest target.",},
+                [3] = {"Silent Aim", "Supress view movement when aimbotting.",},
+            },
+            [5] = {
+                [1] = {"Knifebot", "Automatically knife when your target is in range.", {"Off", "Default Knifebot", "Only Backstab", "Quick Stab",},},
+            },
+        },
+        [3] = {
+            {"Weapon", "Position Adjustment", "Movement",},
+            [2] = {
+                [1] = {[5] = true, "Hit Chance", "Minimum chance to hit before aimbot shoots.",},
+                [2] = {[5] = true, "Min Damage", "Minimum damage required after wall penetration.",},
+                [3] = {[5] = true, "Anti-Recoil", "Counter Weapon Recoil for higher accuracy.",},
+                [4] = {[5] = true, "Double Fire", "Shoot two bullets at once.",{"Off", "Shift", "Rapid",},}, --Added
+                [5] = {[5] = true, "Choke", "Counter accuracy loss when getting hit.",}, --Added
+            },
+            [3] = {
+                [1] = {"Backtracking", "Aim at enemy history position.",},
+                [2] = {"Resolver", "Improve accuracy when shooting at enemy anti-aim.",},
+            },
+            [4] = {
+                [1] = {"Auto Stop", "Counter strafe when shooting to lower accuracy.",},
+                [2] = {"Auto Stop Speed", "Maximum speed when auto stopping.",}, --Added
+                [3] = {"Auto Duck", "Crouch when shooting to lower inaccuracy.",},
+                [4] = {"Slow Walk Key", "Slow down player movement while holding this key.",},
+                [5] = {"Slow Walk Speed", "Makes you stop faster by counter strafing.",},
+                [6] = {"Quick Stop", "Makes you stop faster by counter strafing.",},
+            },
+        },
+        [4] = {
+            {"Hitbox Points", "Mode", "Advanced",},
+            [2] = {
+                [1] = {[2] = "Amount of points the aimbot will scan for.",},
+            },
+            [3] = {
+                [1] = {[5] = true, "Auto Wall", "Shoot through penetrable walls.",},
+                [2] = {[5] = true, "Bodyaim", "Configure bodyaim prioritization.", {"Off", "Priority", "Lethal",},},
+                [3] = {[5] = true, "Delay Shot - Head", "Wait for more accurate hitbox state.",},
+                [4] = {[5] = true, "Delay Shot - Body",},
+                [5] = {[5] = true, "Delay Shot - Limbs",},
+            },
+            [4] = {
+                [1] = {"Max Processing Time", "Lower this value to maintain better FPS.",},
+            },
+        },
+        [5] = {
+            {"Base Direction", "Left Direction", "Right Direction", "Extra", "Condition", "Advanced",}, --Added #4
+            [2] = {
+                [1] = {[6] = true, "Spinbot Speed",},
+                [2] = {[6] = true,"Rotation Offset",},
+                [3] = {[6] = true,"LBY Offset",},
+            },
+            [3] = {
+                [1] = {[6] = true,"Spinbot Speed",},
+                [2] = {[6] = true,"Rotation Offset",},
+                [3] = {[6] = true,"LBY Offset",},
+            },
+            [4] = {
+                [1] = {[6] = true,"Spinbot Speed",},
+                [2] = {[6] = true,"Rotation Offset",},
+                [3] = {[6] = true,"LBY Offset",},
+            },
+            [5] = {
+                [1] = {"Fake Duck", "Allows you to shoot higher while crouching.",}, --Moved
+                [2] = {"Static Legs", "Makes your legs static when slow walking.",}, --Added
+            },
+            [6] = {
+                [1] = {"Disable On Use", "Disable anti-aim when pressing the use key.",},
+                [2] = {"Disable On Knife", "Disable anti-aim when holding knife.",},
+                [3] = {"Disable On Grenade", "Disable anti-aim when holding a grenade.",},
+                [4] = {"On Shot", "Prevent your on shot model from getting hit.", {"Default", "Desync", "Shift",},},
+            },
+            [7] = {
+                [1] = {"Auto Direction", "Enable left/right direction based on nearby walls.",}, -- 2 removed
+                [2] = {"Anti-Resolver", "Makes continous shots harder to hit.",},
+                [3] = {"Pitch Angle", "", {"Off", "89°", "180° (Untrusted)",},},
+                [4] = {"Fake Expose Toggle", "Flick fake head on edge when enabled.",}, --Added
+            },
+        },          
+    },
+    {
+        {"Overlay", "Local", "World", "Chams", "Skins", "Other",},
+        [2] = {
+            {"Friendly", "Enemy", "Weapon",},
+            [2] = {
+                [1] = {"Box", "Draw 2D box around entity.", {"Off", "Outlined", "Normal",},},
+                [2] = {"Box Precision", "Match 2D box with model bounds.",},
+                [3] = {"Name", "Draw entity name.",},
+                [4] = {"Skeleton", "Draw player skeleton.",},
+                --Removed
+                [5] = {"Health", "Configure health options.", [4] = {"Bar", "Number",},},
+                [6] = {"Armor", "Configure armor options.",}, --Changed
+                [7] = {"Weapon", "Draw weapon of player.", {"Off", "Icon", "Name",},}, --Added
+                [8] = {"Weapon Filter", "Draw weapon name of player.", {"Off", "Active", "All", "Active + Nades",},}, --Changed
+                [9] = {"Ammo", "Amount of ammo left in weapon.",},
+                [10] = {"Flags", "Show player activity", [4] = {"Defusing", "Planting", "Scoped", "Reloading", "Flashed", "Has Defuser", "Has C4",},},
+                [11] = {"Money", "Draw amount of money player has.",},
+                [12] = {"Barrel", "Draw lines where players is looking.",},
+                [13] = {"Dormant", "Show dormant players.",},
+            },
+            [3] = {
+                [1] = {"Box", "Draw 2D box around entity.", {"Off", "Outlined", "Normal",},},
+                [2] = {"Box Precision", "Match 2D box with model bounds.",},
+                [3] = {"Name", "Draw entity name.",},
+                [4] = {"Skeleton", "Draw player skeleton.",},
+                --Removed
+                [5] = {"Health", "Configure health options.", [4] = {"Bar", "Number",},},
+                [6] = {"Armor", "Configure armor options.",}, --Changed
+                [7] = {"Weapon", "Draw weapon of player.", {"Off", "Icon", "Name",},}, --Added
+                [8] = {"Weapon Filter", "Draw weapon name of player.", {"Off", "Active", "All", "Active + Nades",},}, --Changed
+                [9] = {"Ammo", "Amount of ammo left in weapon.",},
+                [10] = {"Flags", "Show player activity", [4] = {"Defusing", "Planting", "Scoped", "Reloading", "Flashed", "Has Defuser", "Has C4",},},
+                [11] = {"Money", "Draw amount of money player has.",},
+                [12] = {"Barrel", "Draw lines where players is looking.",},
+                [13] = {"Dormant", "Show dormant players.",},
+            },
+            [4] = {
+                [1] = {"Box", "Draw 2D box around entity.", {"Off", "Outlined", "Normal",},},
+                [2] = {"Box Precision", "Match 2D box with model bounds.",},
+                [3] = {"Name", "Draw entity name.", {"Off", "Icon", "Name",},}, --Changed
+                [4] = {"Ammo", "Amount of ammo left in weapon.",},
+                -- [5] = {"Nades", "Draw thrown nades.", [4] = {"Name", "Detonation Timer",},}, --Added but broken
+                [6] = {"C4 Timer", "Display time till C4 explosion.",},
+                [7] = {"Danger Zone Items", "Various items from danger zone.",},
+                [8] = {"Danger Zone Turret", "Turret from danger zone.",},
+            },
+        },
+        [3] = {
+            {"Camera", "Helper",},
+            [2] = {
+                [1] = {"Third Person Toggle", "Toggle third person view with this key.",},
+                [2] = {"Third Person Distance", "Distance of the camera.",},
+                [3] = {"Smooth Ghost Model", "Match fake ghost position with real.",},
+            },
+            [3] = {
+                [1] = {"Wallbang Info", "Show penetrable space on walls.", [4] = {"Damage", "Grid",},}, --Changed
+                [2] = {"Out Of View", "Display out of view enemies indicators.", {"Off", "Arrow", "Arrow + Info"},},
+                [3] = {"Out Of View Scale", "Scale the positioning of indicators from screen center."}
+            },
+        },
+        [4] = {
+            {"Extra", "Materials", "Nade",},
+            {
+                [1] = {"Hit Effects", "Effects when hitting an enemy.", [4] = {"Sound", "Marker",},},
+                [2] = {"Bullet Tracers Mode", "Visualize bullet paths.", {"Off", "Latest", "All",},},
+                [3] = {"Bullet Tracers Filter", "", [4] = {"Local", "Friendly", "Enemy",},}, --Changed
+                [4] = {"Sounds", "Display audible sounds on screen.",},
+            },
+            {
+                [1] = {"Walls Color",},
+                [2] = {"Static Props Color",},
+                [3] = {"Skybox", "Change how the sky looks.",},
+            },
+            {
+                [1] = {"Inferno", "Draw molotov covered inerno.", [4] = {"Local", "Friendly", "Enemy",},},
+                [2] = {"Grenade Tracer", "Visualize predicted grenade trajectory.", [4] = {"Local", "Friendly", "Enemy",},},
+                [3] = {"Grenade Warning", "Show predicted explosion warning.", [4] = {"Local", "Friendly", "Enemy",},}, --Added
+            },
+        },
+        --[[  [5] = {  Changed but broken
+            {"Model", "Viewmodel Weapon", "Viewmodel Arms", "Attachments", "Ghost", "Backtrack", "Weapon", "Nades",},
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+                [4] = {"Glow", "Glow effect on model.", {"Off", "Color", "Health",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+                [4] = {"Glow", "Glow effect on model.", {"Off", "Color", "Health",},},
+            },
+            {
+                [1] = {"Occluded", "Material occluded by walls.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble",},},
+                [2] = {"Visible", "Visible material.", {"Off", "Flat", "Color", "Metalic", "Glow", "Pearlescent", "Bubble", "Textured", "Invisible",},},
+                [3] = {"Overlay", "Apply over previus materials.", {"Off", "Wireframe",},},
+                [4] = {"Glow", "Glow effect on model.", {"Off", "Color", "Health",},},
+            },
+        }, ]]
+
+        [6] = {
+            {"Change visual items",},
+            {
+                {"Item", "Select weapon or model.",},
+                {"Paint Kits", "Select skin of model",},
+                {"Wear", "Quality of item texture.",},
+                {"Seed", "Seed of texture generation.",},
+                {"StatTrak", "Kill counter of weapon.",},
+                {"Name", "Custom name of item.",},
+                {"Add",},
+                {"Remove",},
+            },
+        },
+        [7] = {
+            {"Extra", "Performance", "Effects",},
+            {
+                {"Radar", "Display custom radar.",},
+                {"Radar Range", "Set radar range.",},
+                {"Crosshair", "Display custom crosshair.",},
+                {"Crosshair Recoil", "Draws the spot where your shots will go.", {"Off", "Line", "Fade",},},
+                {"Anti-OBS", "Hide visuals from screen recorder.",},
+                {"Anti-Screenshot", "Hide visuals from screenshots.",},
+                {"Preserve Killfeed", "Preserve the killfeed.",},
+            },
+            {
+                {"No Render For Teammates",},
+                {"No Render For Enemies",},
+                {"No Render For Weapons",},
+                {"No Render For Ragdolls",},
+                {"Disable Far Models",},
+            },
+            {
+                {"No Flash",},
+                {"No Smoke",},
+                {"No Recoil",},
+                {"No Scope",},
+                {"No Scope Overlay",},
+                {"No Sky",},
+                {"No Fog",},
+                {"No Post Processing",},
+            },
+        },
+    },
+    {
+        {"General", "Movement", "Enhancement",},
+        {
+            {"Extra", "Logs", "Restrictions", "Bypass", "Server",},
+            {
+                {"Show Spectators", "See who is spectating you.",},
+                {"Show Ranks", "Show ranks of players.",},
+                {"Auto-Accept Match", "Automatically accept match.",},
+            },
+            {
+                {"Log Damage", "Log damage dealt to enemies.",},
+                {"Log Purchases", "Log purchases made by enemy team.",},
+                {"Log Console", "Log Console messages on screen.",},
+            },
+            {
+                {"Anti-Untrusted", "Restrict Various features on Valve servers.",},
+            },
+            {
+                {"Bypass sv_pure", "Allow custom models and materials from csgo directory.",},
+                {"Bypass sv_cheats", "Bypass protected convars.",},
+                {"Unlock Steam Achievements",},
+                {"Show hidden ConVars",},
+            },
+            {
+                {"sv_maxunlag", "Configure server-side max backtracking factor.",},
+                {"sv_maxusrcmdprocessticks", "Configure server-side max lag factor.",},
+            },
+        },
+        {
+            {"Jump", "Other", "Strafe",},
+            {
+                {"Auto Jump", "Select auto jump mode for bunnyhopping.", {"Off", "Perfect", "Legit",},},
+                {"Edge Jump", "Jump right before falling of an edge.",},
+                {"Duck Jump", "Reach higher by crouching while jumping.",},
+                {"Auto Jump-Bug", "No fall damage when landing from certain height.",},
+            },
+            {
+                {"Fast Duck", "Exploit movement code to crouch quicker.",},
+                {"Slide Walk", "Glitch animation to appear sliding."},
+            },
+            {
+                {"Enable", "Enable autostrafer to gain more speed.",},
+                {"Air Strafe", "Increases forward speed while jumping.",},
+                {"Strafe Mode", "Select style of autostrafing.", {"Silent", "Normal", "Sideways", "W-Only", "Mouse",},},
+                {"Circle Strafe", "Strafe in circles when pressing a key.",},
+                {"Snake Strafe", "Strafe like a snake when pressing a key.",},
+                {"Retrack Speed", "Autostrafe in direction of pressed keys.",},
+                {"WASD-Movement", "Autostrafe in direction of pressed keys.",},
+            },
+        },
+        {
+            {"Fakelag", "Fakelatency", "Appearance",},
+            {
+                {"Enable", "Enable lag effect.",},
+                {"On Key", "Enable lag only when holding this key.",},
+                {"Type", 'Type or "patern" of lag.', {"Normal", "Adaptive", "Random", "Switch",},},
+                {"Factor", "How many commands will be chocked.",},
+                {"Enable Peek Mode", "Lag your model behind wall when peeking.",},
+                {"Conditions", "Configure fakelag options.", [4] = {"While Standing", "While In Air", "While On Ground",},},
+            },
+            {
+                {"Enable", "Enable latency modifier.",},
+                {"On Key", "Increase latency only when holding this key.",},
+                {"Amount", "Absolute latency to achieve.",},
+            },
+            {
+                {"Steal Name", "Steal other player name, limited to 5 times.",},
+                {"Invisible Name", "Make your name invisible",},
+                {"Chat Spam", "Advertise AIMWARE in chat.",},
+                {"Clantag Changer", "Put AIMWARE as your clantag.",},
+            },
+        },
+    },
+    {
+        {"Configurations", "Lua Scripts", "Advanced",},
+        {
+            {"Manage configurations",},
+            {
+                {"Name", "Create or rename configuration.",},
+                {"Create",},
+                {"Rename",},
+                {"Load",},
+                {"Save",},
+                {"Reset",},
+                {"Delete",},
+                {"Export To Clipboard",},
+                {"Import From Clipboard",},
+                {"Set As Default",},
+                {"Refresh List",},
+            },
+        },
+        {
+            {"Manage scripts",},
+            {
+                {"Name", "Create or rename configuration.",},
+                {"Create",},
+                {"Rename",},
+                {"Edit (BETA)",},
+                {"Load",},
+                {"Unload",},
+                {"Reset Lua State",},
+                {"Delete",},
+                {"Set As Autorun",},
+                {"Refresh List",},
+            },
+        },
+        {
+            {"Manage Advanced Settings",},
+            {
+                {"Open Menu Key", "Bind for main menu toggle.",},
+                {"Open Console Key", "Console for more customization.",},
+                {"Dpi Scale", "Scale the UI size by this amount.",},
+                {"Open Settings Folder",},
+            },
+        },
+    },
+};
+return(French);
