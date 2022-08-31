@@ -1,7 +1,7 @@
 local info = {
     v_loc = 1.05,
-    v_onl = http.Get("https://raw.githubusercontent.com/zer420/Menu-Translator/master/version"),
-    src = "https://raw.githubusercontent.com/zer420/Menu-Translator/master/core.lua",
+    v_onl = http.Get("https://raw.githubusercontent.com/zer420/aw/main/translator/version"),
+    src = "https://raw.githubusercontent.com/zer420/aw/main/translator/translator.lua",
     dir = "zerlib\\",
     sc_dir = "menutrsltr\\",
     name = GetScriptName(),
@@ -28,11 +28,11 @@ local db = {
         ["中文"] = {},
     },
     src = {
-        [1] = "https://raw.githubusercontent.com/zer420/Menu-Translator/master/languages/English",
+        [1] = "https://raw.githubusercontent.com/zer420/aw/main/translator/languages/english",
         [2] = "https://raw.githubusercontent.com/AimwarePasteLua/Chineseware/master/%E4%B8%AD%E6%96%87.lua",
     },
     v_onl = {
-        [1] = "https://raw.githubusercontent.com/zer420/Menu-Translator/master/languages/English-version",
+        [1] = "https://raw.githubusercontent.com/zer420/aw/main/translator/languages/english-version",
         [2] = "https://raw.githubusercontent.com/AimwarePasteLua/Chineseware/master/version",
     },
 }; --database with every language inside
