@@ -1,2 +1,3 @@
 # aw luas
-### This is the repository where every lua I made are located.
+There is a repository where every Lua that I made is.
+Some are deprecated.
