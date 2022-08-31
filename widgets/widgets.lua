@@ -1,11 +1,11 @@
 -- auto-updater + auto-reloader
     local updaterInfo = {
         versionLocal = 1.06,
-        versionOnline = http.Get("https://raw.githubusercontent.com/zer420/Widgets/main/version.txt"),
-        sourceOnline = "https://raw.githubusercontent.com/zer420/Widgets/main/widgets.lua",
+        versionOnline = http.Get("https://raw.githubusercontent.com/zer420/aw/main/widgets/version"),
+        sourceOnline = "https://raw.githubusercontent.com/zer420/aw/main/widgets/widgets.lua",
         workDirectory = "zerlib\\",
         name = GetScriptName(),
-        changelog = http.Get("https://raw.githubusercontent.com/zer420/Widgets/main/changelog.md"),
+        changelog = http.Get("https://raw.githubusercontent.com/zer420/aw/main/widgets/changelog.md"),
     };
 
     local function updater()
