@@ -8,8 +8,8 @@ local info = {
 
 	output_path = "zerlib\\menutrsltr\\output.lua",
 	v_loc = 1.00,
-	v_onl = http.Get("https://raw.githubusercontent.com/zer420/Menu-Translator/master/languages/UpdaterTool_version"),
-	src = "https://raw.githubusercontent.com/zer420/Menu-Translator/master/languages/UpdaterTool.lua",
+	v_onl = http.Get("https://raw.githubusercontent.com/zer420/aw/main/translator/languages/tool-version"),
+	src = "https://raw.githubusercontent.com/zer420/aw/main/translator/languages/tool.lua",
 	script_name = GetScriptName(),
 	data_start_line = 27,
 };
