@@ -1,7 +1,7 @@
 local info = {
     v_loc = 1.03,
-    v_onl = http.Get("https://raw.githubusercontent.com/zer420/Player-List/master/version"),
-    src = "https://raw.githubusercontent.com/zer420/Player-List/master/core.lua",
+    v_onl = http.Get("https://raw.githubusercontent.com/zer420/aw/main/player-list/version"),
+    src = "https://raw.githubusercontent.com/zer420/aw/main/player-list/player-list.lua",
     dir = "zerlib\\",
     name = GetScriptName(),
     updt_available = false,
