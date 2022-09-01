@@ -1,2 +1,3 @@
-# Search-options
-Allows you to load luas/cfgs faster by searching their names.
+# search
+
+#### Allows you to load Luas and configs faster by searching by their names.
