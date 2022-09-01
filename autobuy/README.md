@@ -1,3 +1,3 @@
 # autobuy
 
-### An autobuy predicting using ping trying to be one tick faster than events based one.
+### An autobuy using internet latency instead of in-game events in order to be one tick faster.
